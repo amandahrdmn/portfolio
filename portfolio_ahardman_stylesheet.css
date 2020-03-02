@@ -1,0 +1,261 @@
+/*   default settings   */
+*{
+box-sizing: border-box;
+font-family:Segoe UI, Helvetica, Verdana; 
+}
+body{                 	/* removes default padding and margin around the ouside of the entire webpage */
+	font-size:62.5%;
+	margin:0;
+	padding:0;
+}
+@-ms-viewport{
+  width: device-width;
+}
+a{text-decoration:none;
+}
+input:focus{
+	decoration:none;
+	border:none;
+	outline:none;
+}
+/* navbar settings */
+.navbar{
+	position:sticky;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	top:0px;
+	width:100%;
+	height:10vh;
+	border:1px solid black;
+}
+.navbar .left.container{
+	height:100%;
+	width:60%;
+	border:1px solid rgb(255,255,0);
+}
+.navbar .link.container{
+	width:40%;
+	height:100%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.navbar  .link.container a{
+	color:rgb(170,170,170);
+	font-size:1rem;
+	transition-duration:0.8s;
+}
+.navbar  .link.container a:visited{
+	color:inherit;
+	text-decoration:none;
+}
+.navbar  .link.container a:hover{
+	color:rgb(255,255,255);
+	transition-duration:0.3s;
+}
+
+/* main section settings*/
+main{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:90vh;
+	border:1px solid black;
+}
+main .container{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	height:50%;
+	width:70%;
+	border:1px solid black;
+}
+main h1{
+	font-size:5rem;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+main h3{
+	text-align:left;
+	font-size:2rem;
+	margin:30px 0px 0px 0px;
+	padding:0px;
+	border:0px;
+}
+/* portfolio section */
+.portfolio{
+	width:100%;
+	height:700px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:1px solid red;
+}
+.portfolio .container{
+	width:70%;
+	height:500px;
+	background-color:blue;
+}
+.portfolio h2{
+	display:flex;
+	align-items:center;
+	height:12%;
+	font-size:3rem;
+	margin:0px;
+	padding:0px;
+	background-color:gray;
+}
+.portfolio .container .builds_container{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+	height:88%;
+	background-color:yellow;
+}
+.build.box{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	height:47.5%;
+	width:32.75%;
+	border:1px solid red;
+	transition-duration:0.6s;
+}
+.build.box:hover{
+	opacity:0.5;
+	transition-duration:0.6s;
+}
+.popup{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:20%;
+	width:40%;
+	border:1px solid black;
+	font-size:0.8rem;
+	visibility:hidden;
+	opacity:0;
+	transition:visibility 0s linear 0.6s, opacity 0.6s linear;
+	transition:all 0.6s ease;
+}
+.popup.webpage{
+	margin-top:15%;
+	margin-bottom:8%;
+}
+.popup.comingsoon{
+	display:flex;	
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	margin:30%;
+	padding:5%;
+}
+.build.box:hover>.popup{
+	visibility:visible;
+	opacity:1;
+	transition-duration:0.5s;
+}
+	
+/* about me section */
+.about_me{
+	width:100%;
+	height:600px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:1px solid green;
+}
+.about_me .container{
+	width:70%;
+	height:80%;
+	background-color:green;
+}
+.about_me h2{
+	display:flex;
+	align-items:center;
+	height:12%;
+	font-size:3rem;
+	margin:0px;
+	padding:0px;
+	background-color:gray;
+}
+.about_me p{
+	display:flex;
+	align-items:center;
+	height:88%;
+	margin:0px;
+	padding:0px;
+	font-size:1.5rem;
+}
+/* footer */
+footer{
+	width:100%;
+	height:150px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:1px solid blue;
+}
+footer .center.container{
+	display:flex;
+	justify-content:center;
+	width:70%;
+	height:100%;
+	background-color:green;
+}
+footer h3{
+	display:flex;
+	align-items:center;
+	font-size:2rem;
+	margin:0px;
+	padding:0px;
+	background-color:gray;
+}
+footer .center.container .right.container{
+	display:flex;
+	justify-content:flex-start;
+	align-items:space-around;
+	flex-wrap:wrap;
+	margin-left:40px;
+	width:50%;
+}
+form{
+	display:flex;
+	align-items:center;
+	width:100%;
+	height:50%;
+	background-color:yellow;
+}
+.email_input{
+	height:60%;
+	width:80%;
+	margin-right:10px;
+	font-size:1rem;
+	border-radius:5px;	
+	border-color:black;
+}
+form button{
+	height:60%;
+	width:20%;
+	border-radius:5px;
+	font-size:0.8rem;	
+}
+form .email_input::placeholder{
+	font-size:1rem;
+	padding:10px;
+	font-style:italic;
+}
+footer a{
+	height:45px;
+	width:45px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:red;
+	margin:0px 20px 0px 0px;
+	padding:0px;
+}
