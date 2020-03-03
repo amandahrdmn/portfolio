@@ -54,13 +54,16 @@ circle{
 .navbar .link.container{
 	position:relative;
 	z-index:99999;
-	height:70%;
+	height:52px;
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
+	background-color:rgb(180,180,180);
+	border:5px solid var(--cyan_light);
+	border-radius:5px;
 }
 .navbar .link.container a{
-	height:70%;
+	height:100%;
 	display:flex;
 	justify-content:center;
 	align-items:center;
