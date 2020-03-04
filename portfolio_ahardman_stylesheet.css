@@ -14,15 +14,16 @@ body{                 	/* removes default padding and margin around the ouside o
 	background-image: linear-gradient(to right,rgb(110,110,110),rgb(180,180,180));
 }
 @-ms-viewport{
-  width: device-width;
+	width: device-width;
 }
-a{text-decoration: none;
+a{
+	text-decoration: none;
 	color:rgb(0,0,0);
 }
 input:focus{
 	border: none;
 	outline: none;
-	}
+}
 svg.logo{
 	z-index: -1;
 	position: absolute;
@@ -298,7 +299,6 @@ footer a img{
 }
 /* mobile responsivity */
 @media only screen and (max-width: 600px) {
-	
 	.navbar{
 		position: fixed;
 		display: flex;
