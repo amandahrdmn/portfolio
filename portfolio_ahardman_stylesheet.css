@@ -1,4 +1,3 @@
-/*   default settings   */
 * {
 	box-sizing: border-box;
 	font-family: 'Segoe UI', Helvetica, Verdana; 
@@ -48,7 +47,6 @@ circle {
 	fill: #00A499;
 }
 
-/* ----------------------navbar settings---------------------- */
 .navbar {
 	position: fixed;
 	display: flex;
@@ -80,7 +78,6 @@ circle {
 	margin: 8px;
 	color: #000000;
 	font-size: 2rem;
-	transition-duration: 0.8s;
 }
 
 .navbar a:visited {
@@ -92,13 +89,12 @@ circle {
 	transition-duration: 0.3s;
 }
 
-/* ----------------------main section settings---------------------- */
 main {
 	background-image: linear-gradient(to right,#6E6E6E,#B4B4B4);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: calc(100vh - 60px);
+	height: 100vh;
 }
 
 main .container {
@@ -125,7 +121,6 @@ main h3 {
 	border: 0;
 }
 
-/* portfolio section */
 .portfolio {
 	width: 100%;
 	display: flex;
@@ -140,8 +135,6 @@ main h3 {
 }
 
 .portfolio h2 {
-	display: flex;
-	align-items: center;
 	font-size: 4rem;
 	margin: 0 0 60px 0;
 	padding: 0;
@@ -160,14 +153,13 @@ main h3 {
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
-	width: 200px;
-	height: 200px;
-	transition-duration: 0.6s;
+	width: 400px;
+	height: 400px;
 	border: 3px solid #00A499;
 	border-radius: 5px;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: 0% 20%;
+	background-position: 0 20%;
 }
 
 .popup {
@@ -179,11 +171,11 @@ main h3 {
 }
 
 .build.box1 {
-	background-image: url('https://raw.githubusercontent.com/Mayden-Academy/FST-curriculum/master/MAYDEN%20ACADEMY_WEBSAFE_LOGO_06.15.png?token=AORF4IAOEYU56RY3T3FACIK6M6EHG');
-}	
+	background-image: url('https://github.com/amandahrdmn/collection_app/blob/addEdit/collection_app_image.png?raw=true');
+}
 
 .build.box2 {
-	background-image: url('https://github.com/amandahrdmn/pilot-webpage-exercise/blob/master/pilot_webpage_image.png?raw=true');
+	background-image: url("https://github.com/amandahrdmn/portfolio-project1/blob/master/Armadillo's_Numbers_Game.png?raw=true");
 }
 
 .build.box_empty {
@@ -194,7 +186,6 @@ main h3 {
 	background-color: #00CCBF;
 }
 
-/* ----------------------about me section---------------------- */
 .about_me {
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -230,7 +221,6 @@ main h3 {
 	font-size: 2rem;
 }
 
-/* ----------------------footer---------------------- */
 footer {
 	width: 100%;
 	display: flex;
@@ -307,7 +297,7 @@ footer a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 0 0 2px;
+	margin: 0 0 0 10px;
 	padding: 0;
 }
 
@@ -322,7 +312,6 @@ footer a img {
 	flex-direction: row;
 }
 
-/* mobile responsivity */
 @media only screen and (max-width: 600px) {
 	
 	.navbar {
@@ -366,8 +355,6 @@ footer a img {
 	}
 	
 	.footer_links {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin: 20px 0;
 	}
-	
 }
