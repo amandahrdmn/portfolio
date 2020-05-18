@@ -130,8 +130,8 @@ body {
 }
 
 .nav_container.active {
-    background-color: #ffffff;
     transition: 2s;
+    background-color: #ffffff
 }
 
 nav {
