@@ -6,27 +6,32 @@
     <link rel="stylesheet"  href="normalize.css" type="text/css">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keyframes.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="mobile_nav_styles.css" media="screen and (max-width: 700px)" type="text/css">
+    <link rel="stylesheet" href="desktop_nav_styles.css"  media="(min-width: 700px)" type="text/css">
     <script defer src="https://kit.fontawesome.com/8d0ae17846.js" crossorigin="anonymous"></script>
+    <script defer src="functions.js"></script>
     <script defer src="main.js"></script>
 </head>
 <body>
-    <div class="nav_container active">
-        <nav class="nav_bar active">
-            <div id="home_link" class="nav_bar nav_link active">Home</div>
-            <div class="nav_bar nav_divider active"></div>
-            <div id="about_link" class="nav_bar nav_link active">About</div>
-            <div class="nav_bar nav_divider active"></div>
-            <div id="portfolio_link" class="nav_bar nav_link active">Portfolio</div>
-            <div class="nav_bar nav_divider active"></div>
-            <div id="contact_link" class="nav_bar nav_link active">Contact</div>
+    <div class="nav_container">
+        <nav class="nav_bar">
+            <a href="#home_section" id="home_link" class="nav_bar nav_link">Home</a>
+            <div class="nav_bar nav_divider"></div>
+            <a href="#about_me_section"  id="about_link" class="nav_bar nav_link">About</a>
+            <div class="nav_bar nav_divider"></div>
+            <a href="#portfolio_section"  id="portfolio_link" class="nav_bar nav_link">Portfolio</a>
+            <div class="nav_bar nav_divider"></div>
+            <a href="#contact_me_section" id="contact_me_link" class="nav_bar nav_link">Contact</a>
         </nav>
-        <i class="fas fa-angle-left fa-lg nav_closer active"></i>
+        <i class="fas fa-angle-left nav_closer"></i>
     </div>
-    <section class="home">
+    <section id="home_section" class="home">
         <h1>Amanda Hardman</h1>
         <h3>Fullstack Developer</h3>
     </section>
-    <section class="about_me hidden">
+    <section id="about_me_section" class="about_me hidden">
         <h2 id="about_me_title">About Me</h2>
         <div id='about_me_text'>
             <p>I'm currently studying at Mayden Academy and hope to further my web development skills and eventually
@@ -35,7 +40,7 @@
             <p>Have a look around and contact me if you'd like more details!</p>
         </div>
     </section>
-    <section class="portfolio hidden">
+    <section id="portfolio_section" class="portfolio hidden">
         <h2 id="portfolio_title">Portfolio</h2>
         <div class='projects_container'>
             <div class='project box1'>
@@ -83,7 +88,7 @@
             More to Come!
         </div>
     </section>
-    <section class="contact_me hidden">
+    <section id="contact_me_section" class="contact_me hidden">
         <h2>Get in touch via:</h2>
         <div id="contact_container">
             <div id='contact_links'>

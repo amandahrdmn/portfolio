@@ -1,76 +1,128 @@
+if (!screenSizeSmall()) {
+    activateNavBar();
+}
 
-document.querySelector('.nav_closer').addEventListener('click', () => {
-    document.querySelectorAll('.nav_bar').forEach(element => {
-        element.classList.remove('active');
-        element.classList.add('inactive');
+touch_screen = "ontouchstart" in document.documentElement;
+
+if(touch_screen) {
+    document.querySelector('.nav_closer').addEventListener('touchstart', () => {
+        deactivateNavBar();
     });
 
-    document.querySelector('.nav_closer').classList.remove('active');
-    document.querySelector('.nav_closer').classList.add('inactive');
-    document.querySelector('.nav_container').classList.remove('active');
-    document.querySelector('.nav_container').classList.add('inactive');
-});
+    document.querySelector('.nav_bar').addEventListener('touchstart', () => {
+        activateNavBar();
+    });
 
-document.querySelector('.nav_bar').addEventListener('click', () => {
-    document.querySelectorAll('.nav_bar').forEach(element => {
-        if(!element.classList.contains('active')) {
-            element.classList.add('active');
-            element.classList.remove('inactive');
+    document.querySelector("#home_link").addEventListener('touchstart', () => {
+        if(document.querySelector("#home_link").classList.contains('active')) {
+            hideSections();
+
+            document.querySelector('.home').classList.add('active');
+            document.querySelector('.home').classList.remove('hidden');
+        }
+
+        if(screenSizeSmall()) {
+            deactivateNavBar();
         }
     });
 
-    document.querySelector('.nav_closer').classList.add('active');
-    document.querySelector('.nav_closer').classList.remove('inactive');
-    document.querySelector('.nav_container').classList.add('active');
-    document.querySelector('.nav_container').classList.remove('inactive');
-});
+    document.querySelector("#about_link").addEventListener('touchstart', () => {
+        if(document.querySelector("#about_link").classList.contains('active')) {
+            hideSections();
 
-document.querySelector("#home_link").addEventListener('click', () => {
-    if(document.querySelector("#home_link").classList.contains('active')) {
-        document.querySelectorAll('section').forEach(element => {
-            element.classList.add('hidden');
-            element.classList.remove('active');
-        });
+            document.querySelector('.about_me').classList.add('active');
+            document.querySelector('.about_me').classList.remove('hidden');
+        }
 
-        document.querySelector('.home').classList.add('active');
-        document.querySelector('.home').classList.remove('hidden');
-    }
-});
+        if(screenSizeSmall()) {
+            deactivateNavBar();
+        }
+    });
 
-document.querySelector("#about_link").addEventListener('click', () => {
-    if(document.querySelector("#about_link").classList.contains('active')) {
-        document.querySelectorAll('section').forEach(element => {
-            element.classList.add('hidden');
-            element.classList.remove('active');
-        });
+    document.querySelector("#portfolio_link").addEventListener('touchstart', () => {
+        if(document.querySelector("#portfolio_link").classList.contains('active')) {
+            hideSections();
 
-        document.querySelector('.about_me').classList.add('active');
-        document.querySelector('.about_me').classList.remove('hidden');
-    }
-});
+            document.querySelector('.portfolio').classList.add('active');
+            document.querySelector('.portfolio').classList.remove('hidden');
+        }
 
-document.querySelector("#portfolio_link").addEventListener('click', () => {
-    if(document.querySelector("#portfolio_link").classList.contains('active')) {
-        document.querySelectorAll('section').forEach(element => {
-            element.classList.add('hidden');
-            element.classList.remove('active');
-        });
+        if(screenSizeSmall()) {
+            deactivateNavBar();
+        }
+    });
 
-        document.querySelector('.portfolio').classList.add('active');
-        document.querySelector('.portfolio').classList.remove('hidden');
-    }
-});
+    document.querySelector("#contact_me_link").addEventListener('touchstart', () => {
+        if(document.querySelector("#contact_me_link").classList.contains('active')) {
+            hideSections();
 
-document.querySelector("#contact_link").addEventListener('click', () => {
-    if(document.querySelector("#contact_link").classList.contains('active')) {
-        document.querySelectorAll('section').forEach(element => {
-            element.classList.add('hidden');
-            element.classList.remove('active');
-        });
+            document.querySelector('.contact_me').classList.add('active');
+            document.querySelector('.contact_me').classList.remove('hidden');
+        }
 
-        document.querySelector('.contact_me').classList.add('active');
-        document.querySelector('.contact_me').classList.remove('hidden');
-    }
-});
+        if(screenSizeSmall()) {
+            deactivateNavBar();
+        }
+    });
+} else {
+    document.querySelector('.nav_closer').addEventListener('click', () => {
+        deactivateNavBar();
+    });
+
+    document.querySelector('.nav_bar').addEventListener('click', () => {
+        activateNavBar();
+    });
+
+    document.querySelector("#home_link").addEventListener('click', () => {
+        if(document.querySelector("#home_link").classList.contains('active')) {
+            hideSections();
+
+            document.querySelector('.home').classList.add('active');
+            document.querySelector('.home').classList.remove('hidden');
+        }
+
+        if(screenSizeSmall()) {
+            deactivateNavBar();
+        }
+    });
+
+    document.querySelector("#about_link").addEventListener('click', () => {
+        if(document.querySelector("#about_link").classList.contains('active')) {
+            hideSections();
+
+            document.querySelector('.about_me').classList.add('active');
+            document.querySelector('.about_me').classList.remove('hidden');
+        }
+
+        if(screenSizeSmall()) {
+            deactivateNavBar();
+        }
+    });
 
 
+    document.querySelector("#portfolio_link").addEventListener('click', () => {
+        if(document.querySelector("#portfolio_link").classList.contains('active')) {
+            hideSections();
+
+            document.querySelector('.portfolio').classList.add('active');
+            document.querySelector('.portfolio').classList.remove('hidden');
+        }
+
+        if(screenSizeSmall()) {
+            deactivateNavBar();
+        }
+    });
+
+    document.querySelector("#contact_me_link").addEventListener('click', () => {
+        if(document.querySelector("#contact_me_link").classList.contains('active')) {
+            hideSections();
+
+            document.querySelector('.contact_me').classList.add('active');
+            document.querySelector('.contact_me').classList.remove('hidden');
+        }
+
+        if(screenSizeSmall()) {
+            deactivateNavBar();
+        }
+    });
+}
