@@ -9,7 +9,7 @@
     <script defer src="main.js"></script>
 </head>
 <body>
-    <div class="nav_container">
+    <div class="nav_container active">
         <nav class="nav_bar active">
             <div id="home_link" class="nav_bar nav_link active">Home</div>
             <div class="nav_bar nav_divider active"></div>
@@ -26,18 +26,53 @@
         <h3>Fullstack Developer</h3>
     </section>
     <section class="about_me hidden">
-            <h2 id="about_me_title">About Me</h2>
-            <div id='about_me_text'>
-                <p>I'm currently studying at Mayden Academy and hope to further my web development skills and eventually specialise in back-end development.</p>
-                <p>In my spare time I enjoy knitting, cross stitch and running.</p>
-                <p>Have a look around and contact me if you'd like more details!</p>
-            </div>
+        <h2 id="about_me_title">About Me</h2>
+        <div id='about_me_text'>
+            <p>I'm currently studying at Mayden Academy and hope to further my web development skills and eventually specialise in back-end development.</p>
+            <p>In my spare time I enjoy knitting, cross stitch and running.</p>
+            <p>Have a look around and contact me if you'd like more details!</p>
+        </div>
     </section>
-    <section class="portfolio hidden">
-
+    <section class="portfolio">
+        <h2 id="portfolio_title">Portfolio</h2>
+        <div class='projects_container'>
+            <div class='project box1'>
+                <img src="Armadillo's_Numbers_Game.png"/>
+                <div class="project_details">
+                    <div class="project_text">
+                        <h5 class="project_title">Armadillo's Numbers Game</h5>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <a href='https://dev.maydenacademy.co.uk/projects/2020Feb/2020-feb-numberGame/' class='popup webpage'>Demo</a>
+                </div>
+            </div>
+            <div class='project box2'>
+                <img src="ArmadilloEstates.png"/>
+                <div class="project_details">
+                    <div class="project_text">
+                        <h5 class="project_title">Armadillo Estates</h5>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <a href='https://github.com/Mayden-Academy/2020-feb-propertyListing' class='popup github'>GitHub</a>
+                </div>
+            </div>
+            <div class='project box3'>
+                <img src="Aptitude%20AdminPage.png"/>
+                <div class="project_details">
+                    <div class="project_text">
+                        <h5 class="project_title">Mayden Academy Aptitude Test</h5>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <a href='https://github.com/Mayden-Academy/aptitude-test' class='popup github'>GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class='box_empty'>
+            More to Come!
+        </div>
     </section>
     <section class="contact_me hidden">
-        <h3>Get in touch via:</h3>
+        <h2>Get in touch via:</h2>
         <div id="contact_container">
             <form class='email'>
                 <input class='email_input' type='email' placeholder='Email Address'>

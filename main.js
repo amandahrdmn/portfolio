@@ -7,6 +7,8 @@ document.querySelector('.nav_closer').addEventListener('click', () => {
 
     document.querySelector('.nav_closer').classList.remove('active');
     document.querySelector('.nav_closer').classList.add('inactive');
+    document.querySelector('.nav_container').classList.remove('active');
+    document.querySelector('.nav_container').classList.add('inactive');
 });
 
 document.querySelector('.nav_bar').addEventListener('click', () => {
@@ -19,6 +21,8 @@ document.querySelector('.nav_bar').addEventListener('click', () => {
 
     document.querySelector('.nav_closer').classList.add('active');
     document.querySelector('.nav_closer').classList.remove('inactive');
+    document.querySelector('.nav_container').classList.add('active');
+    document.querySelector('.nav_container').classList.remove('inactive');
 });
 
 document.querySelector("#home_link").addEventListener('click', () => {
