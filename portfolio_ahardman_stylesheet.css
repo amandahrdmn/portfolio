@@ -44,7 +44,7 @@ path {
 }
 
 circle {
-	fill: #00A499;
+	fill: #993c50;
 }
 
 .navbar {
@@ -86,7 +86,6 @@ circle {
 
 .navbar a:hover {
 	color: #ffffff;
-	transition-duration: 0.3s;
 }
 
 main {
@@ -140,19 +139,19 @@ main h3 {
 	padding: 0;
 }
 
-.builds_container {
+.projects_container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
-.build {
-	margin: 10px;
-	padding-bottom: 10px;
+.project {
 	display: flex;
-	justify-content: space-around;
-	align-items: flex-end;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px 10px;
+	padding-bottom: 10px;
 	width: 300px;
 	height: 300px;
 	border: 3px solid #00A499;
@@ -170,23 +169,14 @@ main h3 {
 	font-size: 1.5rem;
 }
 
-.build.box1 {
-	background-image: url('https://github.com/amandahrdmn/collection_app/blob/addEdit/collection_app_image.png?raw=true');
+.project img {
+	height: 250px;
+	width: 280px;
+	margin: 10px;
+	object-fit: scale-down;
 }
 
-.build.box2 {
-	background-image: url("https://github.com/amandahrdmn/portfolio-project1/blob/master/Armadillo's_Numbers_Game.png?raw=true");
-}
-
-.build.box3 {
-	background-image: url("https://github.com/amandahrdmn/portfolio-project1/blob/master/Aptitude AdminPage.png?raw=true");
-}
-
-.build.box4 {
-	background-image: url("https://github.com/amandahrdmn/portfolio-project1/blob/master/ArmadilloEstates.png?raw=true");
-}
-
-.build.box_empty {
+.project.box_empty {
 	font-size: 1.5rem;
 	display: flex;
 	justify-content: center;
@@ -194,7 +184,7 @@ main h3 {
 	background-color: #00CCBF;
 }
 
-.about_me {
+.about_me_section {
 	padding-top: 150px;
 	padding-bottom: 150px;
 	display: flex;
@@ -203,11 +193,11 @@ main h3 {
 	background-image: linear-gradient(to right,#00A499,#00CCBF);
 }
 
-.about_me .container {
+.about_me_section .container {
 	width: 70%;
 }
 
-.about_me h2 {
+.about_me_section h2 {
 	display: flex;
 	align-items: center;
 	font-size: 4rem;
@@ -215,7 +205,7 @@ main h3 {
 	margin: 0;
 }
 
-.about_me .p_container {
+.about_me_section .p_container {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 20px;
@@ -336,7 +326,7 @@ footer a img {
 	/*	height: 100vh;*/
 	/*}*/
 	
-	.build {
+	.project {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
